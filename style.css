@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e34192;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aquamarine;
+    text-align: center;
+    text-decoration:dotted;
+}
+.notes
+{
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    width: 80%;
+    margin: 20px;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+.qr-container{
+    width: 500px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: aliceblue;
+    border-radius: 8px;
+    transition: 0.1s all ease;
+}
+.qr-container:hover
+{
+    border: 2px dashed rgb(0, 0, 0);
+}
+.qr-container h2{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 22px;
+
+}
+.qr-container p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.qr-container input{
+    padding: 12px;
+    margin: 12px 0 22px;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #b607ae;
+}
+.qr-container button{
+    background: #2eff2e;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #000000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+
+
+}
+.qr-container button:hover{
+    transform: translateY(-5px);
+    background: rgb(148, 152, 148);
+}
+#qrcode{
+    max-height: 0;
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: max-height 1s;
+
+}
+#qrcode img{
+    width: 100%;
+    padding: 10px auto;
+    
+}
+#qrcode.show-img{
+    max-height: 300px;
+    margin: 12px auto;
+    padding: 10px;
+    border: 2px dashed rgb(67, 225, 236);
+}
+.error{
+    animation: shake 0.3s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
