@@ -1,4 +1,7 @@
 # qr-code-generator.github.io
+
+Disclaimer: Made with the help of Tutorials and i changed the user interface and add some my own features.
+
  
 Welcome to the Qr code Generator! This simple yet powerful web app allows users to generate QR Codes from various types of input such as text or URLs/ Buiilt with HTML , CSS, and Javascript, this tool provides an easy to use interfaceand robust functionality, including validation to ensure that input is provided correctly
 
